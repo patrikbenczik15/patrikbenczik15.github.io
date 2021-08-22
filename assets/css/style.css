@@ -616,6 +616,7 @@ section {
   transition: all 0.3s ease-in-out;
   border-radius: 8px;
   z-index: 1;
+
 }
 
 .services .icon-box::before {
@@ -647,10 +648,13 @@ section {
   transition: all 0.3s ease-in-out;
 }
 
+
+
 .services .title {
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 18px;
+  white-space: nowrap;
 }
 
 .services .icon-box:hover .title {
@@ -670,6 +674,29 @@ section {
 
 .services .icon-box:hover .icon i {
   color: #fff;
+}
+
+/* !  Align services centrally on extra lg devices */
+
+@media (max-width: 1200px) {
+  #services {
+    text-align: center;
+    margin: auto;
+  }
+
+}
+
+/* !  Align services centrally on lg devices */
+@media (min-width: 992px) {
+  #services {
+    text-align: center;
+    margin: auto;
+  }
+
+  .icon-box {
+    width: 15rem;
+    height: 28rem;
+  }
 }
 
 /* !  Align services centrally on md devices */
@@ -999,6 +1026,7 @@ section {
 }
 
 .card {
+  border-radius: 2rem;
   text-align: center;
 }
 
