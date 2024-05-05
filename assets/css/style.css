@@ -9,7 +9,7 @@ a {
 }
 
 a:hover {
-  color: #FFF;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -163,7 +163,7 @@ h6 {
 .navbar a:hover,
 .navbar .active,
 .navbar .active:focus,
-.navbar li:hover>a {
+.navbar li:hover > a {
   background: rgba(255, 255, 255, 0.2);
 }
 
@@ -200,11 +200,11 @@ h6 {
 
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
-.navbar .dropdown ul li:hover>a {
+.navbar .dropdown ul li:hover > a {
   color: #67b0d1;
 }
 
-.navbar .dropdown:hover>ul {
+.navbar .dropdown:hover > ul {
   opacity: 1;
   top: 100%;
   visibility: visible;
@@ -216,7 +216,7 @@ h6 {
   visibility: hidden;
 }
 
-.navbar .dropdown .dropdown:hover>ul {
+.navbar .dropdown .dropdown:hover > ul {
   opacity: 1;
   top: 0;
   left: 100%;
@@ -228,7 +228,7 @@ h6 {
     left: -90%;
   }
 
-  .navbar .dropdown .dropdown:hover>ul {
+  .navbar .dropdown .dropdown:hover > ul {
     left: -100%;
   }
 }
@@ -295,7 +295,7 @@ h6 {
 
 .navbar-mobile a:hover,
 .navbar-mobile .active,
-.navbar-mobile li:hover>a {
+.navbar-mobile li:hover > a {
   color: #b067d1;
 }
 
@@ -329,11 +329,11 @@ h6 {
 
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
-.navbar-mobile .dropdown ul li:hover>a {
+.navbar-mobile .dropdown ul li:hover > a {
   color: #67b0d1;
 }
 
-.navbar-mobile .dropdown>.dropdown-active {
+.navbar-mobile .dropdown > .dropdown-active {
   display: block;
 }
 
@@ -343,7 +343,8 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(rgba(83, 83, 71, 0.793), rgba(132, 0, 255, 0.256)), url("../img/showcase.jpg") top center;
+  background: linear-gradient(rgba(83, 83, 71, 0.793), rgba(132, 0, 255, 0.256)),
+    url("../img/showcase.jpg") top center;
   background-size: cover;
   position: relative;
   margin-bottom: -90px;
@@ -461,7 +462,6 @@ section {
   margin-bottom: 0;
 }
 
-
 /* # Breadcrumbs
 --------------------------------------------------------------*/
 .breadcrumbs {
@@ -484,11 +484,11 @@ section {
   font-size: 14px;
 }
 
-.breadcrumbs ol li+li {
+.breadcrumbs ol li + li {
   padding-left: 10px;
 }
 
-.breadcrumbs ol li+li::before {
+.breadcrumbs ol li + li::before {
   display: inline-block;
   padding-right: 10px;
   color: #6c757d;
@@ -520,7 +520,7 @@ section {
 }
 
 .about::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   right: 0;
@@ -619,7 +619,7 @@ section {
 }
 
 .services .icon-box::before {
-  content: '';
+  content: "";
   position: absolute;
   background: white;
   right: 0;
@@ -692,7 +692,8 @@ section {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: linear-gradient(rgba(83, 83, 71, 0.793), rgba(132, 0, 255, 0.256)), url("../img/cta-bg.jpg") fixed center center;
+  background: linear-gradient(rgba(83, 83, 71, 0.793), rgba(132, 0, 255, 0.256)),
+    url("../img/cta-bg.jpg") fixed center center;
   background-size: cover;
   padding: 60px 0;
 }
@@ -725,8 +726,6 @@ section {
 .cta .cta-btn:hover {
   border-color: #fff;
 }
-
-
 
 /*--------------------------------------------------------------
 # Contact
@@ -780,7 +779,7 @@ section {
   font-weight: 600;
 }
 
-.contact .php-email-form .error-message br+br {
+.contact .php-email-form .error-message br + br {
   margin-top: 25px;
 }
 
@@ -1002,6 +1001,176 @@ section {
   text-align: center;
 }
 
+#pricing .btn {
+  background-color: #8540f5;
+  border-color: #8540f5;
+}
+
+#about #irinea {
+  font-size: 16px;
+}
+
+#projects {
+  margin-top: 0;
+}
+
+#projects p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+time {
+  color: black;
+}
+
+@media only screen and (max-width: 992px) {
+  #pricing {
+    height: 1100px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #pricing {
+    height: 1750px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  #pricing {
+    height: 1675px;
+  }
+}
+
+#pricing .card-title {
+  padding-bottom: 18px;
+}
+
+#contact .alert {
+  display: none;
+  text-align: right;
+}
+
+#about .text {
+  color: #9553ff;
+}
+
+#contact .text {
+  color: #9553ff;
+}
+
+#footer .bx-chevron-right {
+  color: #8540f5 !important;
+}
+
+#footer .footer-info strong,
+h3 {
+  color: #51325c;
+}
+
+#footer .credits {
+  padding-top: 10px;
+  text-align: center;
+  font-size: 13px;
+  color: #fff;
+}
+
+@media (max-width: 575px) {
+  #footer .footer-top .footer-info {
+    margin: -20px 0 30px 0;
+  }
+}
+
+#butonas {
+  background-color: #8540f5;
+}
+
+#cta {
+  font-size: 20px;
+}
+
+.card {
+  text-align: center;
+}
+
+#pricing .btn {
+  background-color: #8540f5;
+  border-color: #8540f5;
+}
+
+#about #irinea {
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 992px) {
+  #pricing {
+    height: 1100px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #pricing {
+    height: 1750px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  #pricing {
+    height: 1675px;
+  }
+}
+
+#pricing .card-title {
+  padding-bottom: 18px;
+}
+
+#contact .alert {
+  display: none;
+  text-align: right;
+}
+
+#about .text {
+  color: #9553ff;
+}
+
+#contact .text {
+  color: #9553ff;
+}
+
+#footer .bx-chevron-right {
+  color: #8540f5 !important;
+}
+
+#footer .footer-info strong,
+h3 {
+  color: #51325c;
+}
+
+#footer .credits {
+  padding-top: 10px;
+  text-align: center;
+  font-size: 13px;
+  color: #fff;
+}
+
+@media (max-width: 575px) {
+  #footer .footer-top .footer-info {
+    margin: -20px 0 30px 0;
+  }
+}
+
+#butonas {
+  background-color: #8540f5;
+}
+
+#cta {
+  font-size: 20px;
+}
+
+.card {
+  text-align: center;
+}
 
 #pricing .btn {
   background-color: #8540f5;
